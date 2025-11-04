@@ -1,22 +1,22 @@
 export default function About() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-3xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
-          About Khula Landing
-        </h2>
-        <p className="text-lg md:text-xl text-gray-600 mb-8">
-          Khula helps you launch and grow with modern tools and design. Our mission is to empower your business through intuitive interfaces, reliable technology, and beautiful experiences.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-8">
-          <div className="bg-blue-100 p-6 rounded-xl shadow w-full sm:w-auto">
-            <span className="text-blue-700 font-semibold text-xl">Fast Deployment</span>
+    <section id="about" className="py-20 px-4 bg-gray-50">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-12">About Khula</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
+            <p className="text-gray-600">
+              We're building the future of work by connecting talented professionals
+              with opportunities that match their skills and aspirations.
+            </p>
           </div>
-          <div className="bg-purple-100 p-6 rounded-xl shadow w-full sm:w-auto">
-            <span className="text-purple-700 font-semibold text-xl">Modern UI</span>
-          </div>
-          <div className="bg-pink-100 p-6 rounded-xl shadow w-full sm:w-auto">
-            <span className="text-pink-700 font-semibold text-xl">Expert Support</span>
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Why Khula?</h3>
+            <p className="text-gray-600">
+              Our platform leverages AI to ensure the best matches between talent
+              and opportunities, making the hiring process faster and more effective.
+            </p>
           </div>
         </div>
       </div>

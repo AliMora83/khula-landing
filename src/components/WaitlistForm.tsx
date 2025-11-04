@@ -1,36 +1,60 @@
+'use client';
+
+import { useState } from 'react';
+
 export default function WaitlistForm() {
+  const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Simulate API call
+    setTimeout(() => {
+      setSubmitted(true);
+      setLoading(false);
+      setEmail('');
+    }, 1000);
+  };
+
   return (
-    <section className="py-20 bg-blue-50">
-      <div className="max-w-lg mx-auto px-6 bg-white rounded-xl shadow-lg">
-        <h2 className="text-3xl font-bold text-blue-700 text-center mb-4">
-          Join Our Waitlist
-        </h2>
-        <p className="text-gray-600 text-center mb-8">
-          Be the first to get updates and early access to new features. Enter your email below!
+    <section id="waitlist" className="py-20 px-4 bg-gray-50">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-4">Join the Waitlist</h2>
+        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Be among the first to experience the future of talent matching.
+          Sign up now to get early access.
         </p>
-        <form className="space-y-6">
-          <div>
-            <label htmlFor="email" className="block text-left text-sm font-medium text-gray-700 mb-2">
-              Email address
-            </label>
+        {submitted ? (
+          <div className="bg-green-50 border-2 border-green-200 rounded-lg p-6">
+            <h3 className="text-2xl font-bold text-green-800 mb-2">
+              Thank You!
+            </h3>
+            <p className="text-green-700">
+              You're on the list! We'll notify you when we launch.
+            </p>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center">
             <input
               type="email"
-              id="email"
-              placeholder="you@example.com"
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:border-blue-500 transition"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
               required
+              className="px-6 py-3 rounded-lg border-2 border-gray-300 focus:border-blue-600 focus:outline-none flex-1 max-w-md"
             />
-          </div>
-          <button
-            type="submit"
-            className="w-full py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
-          >
-            Notify Me
-          </button>
-        </form>
-        <div className="mt-6 text-xs text-gray-500 text-center">
-          We respect your privacy. No spam ever.
-        </div>
+            <button
+              type="submit"
+              disabled={loading}
+              className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold disabled:opacity-50"
+            >
+              {loading ? 'Joining...' : 'Join Waitlist'}
+            </button>
+          </form>
+        )}
       </div>
     </section>
   );
