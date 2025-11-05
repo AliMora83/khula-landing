@@ -16,8 +16,8 @@ export default function Home() {
         <div id="activities"><InclusiveActivities /></div>
         <div id="math-reading"><MathReadingMastery /></div>
         <div id="learning-path"><GuidedLearningPath /></div>
-        <div id="about"><About /></div>
         <div id="pricing"><Pricing /></div>
+        <div id="about"><About /></div>
         <div id="waitlist"><WaitlistForm /></div>
       <Footer />
     </div>

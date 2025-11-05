@@ -19,17 +19,17 @@ export default function Header() {
       <a href="#learning-path" className="hover:text-accent transition-colors">Guidance</a>
     </li>
     <li>
-      <a href="#about" className="hover:text-accent transition-colors">About</a>
+      <a href="#pricing" className="hover:text-accent transition-colors">Pricing</a>
     </li>
     <li>
-      <a href="#pricing" className="hover:text-accent transition-colors">Pricing</a>
+      <a href="#about" className="hover:text-accent transition-colors">About</a>
     </li>
 
   </ul>
         </div>
         <Link
           href="#waitlist"
-          className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+          className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
         >
           Join Waitlist
         </Link>
