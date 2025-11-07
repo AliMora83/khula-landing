@@ -2,8 +2,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-green-50 to-[var(--primary-green)]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_rgba(120,119,198,0.1),transparent_50%)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-green-50 to-[var(--soft-grey)]">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_rgba(166,178,139,0.13),transparent_50%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,_rgba(28,53,45,0.08),transparent_50%)]" />
       </div>
 

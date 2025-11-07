@@ -8,29 +8,54 @@ export default function Header() {
           Khula
         </Link>
         <div className="hidden md:flex space-x-8">
-  <ul className="flex gap-6 font-bold">
-    <li>
-      <a href="#activities" className="hover:text-accent transition-colors">Activities</a>
-    </li>
-    <li>
-      <a href="#math-reading" className="hover:text-accent transition-colors">Math/Reading</a>
-    </li>
-    <li>
-      <a href="#learning-path" className="hover:text-accent transition-colors">Guidance</a>
-    </li>
-    <li>
-      <a href="#pricing" className="hover:text-accent transition-colors">Pricing</a>
-    </li>
-    <li>
-      <a href="#about" className="hover:text-accent transition-colors">About</a>
-    </li>
+<ul className="flex gap-6 font-normal text-md">
+  <li>
+    <a
+      href="#activities"
+      className="hover:text-accent hover:font-bold hover:scale-105 transition-all duration-200"
+    >
+      Activities
+    </a>
+  </li>
+  <li>
+    <a
+      href="#math-reading"
+      className="hover:text-accent hover:font-bold hover:scale-105 transition-all duration-200"
+    >
+      Math/Reading
+    </a>
+  </li>
+  <li>
+    <a
+      href="#learning-path"
+      className="hover:text-accent hover:font-bold hover:scale-105 transition-all duration-200"
+    >
+      Guidance
+    </a>
+  </li>
+  <li>
+    <a
+      href="#pricing"
+      className="hover:text-accent hover:font-bold hover:scale-105 transition-all duration-200"
+    >
+      Pricing
+    </a>
+  </li>
+  <li>
+    <a
+      href="#about"
+      className="hover:text-accent hover:font-bold hover:scale-105 transition-all duration-200"
+    >
+      About
+    </a>
+  </li>
+</ul>
 
-  </ul>
         </div>
         <Link
               href="#waitlist"
-              className="px-6 py-2 rounded-lg text-white transition"
-              style={{ backgroundColor: "var(--primary-green)" }}
+              className="px-6 py-2 rounded-lg text-white transition transform hover:scale-105 duration-300"
+              style={{ backgroundColor: "var(--secondary-deep)" }}
             >
           Join Waitlist
         </Link>
