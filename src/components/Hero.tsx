@@ -2,9 +2,9 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-green-50 to-[var(--primary-green)]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_rgba(120,119,198,0.1),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,_rgba(236,72,153,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,_rgba(28,53,45,0.08),transparent_50%)]" />
       </div>
 
       {/* Content */}
@@ -12,9 +12,12 @@ export default function Hero() {
         {/* Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
           Welcome to{' '}
-          <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Khula Learning
-          </span>
+<span
+  className="bg-gradient-to-r from-[var(--primary-green)] to-[var(--secondary-deep)] bg-clip-text text-transparent"
+>
+  Khula Learning
+</span>
+
         </h1>
 
         {/* Supporting Text */}
@@ -26,13 +29,17 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             href="#get-started"
-            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
+            className="px-8 py-4 text-white text-md font-semibold rounded-md shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
+            style={{
+              background: "linear-gradient(to right, var(--primary-green), var(--secondary-deep))"
+            }}
           >
             Get Started
           </a>
+
           <a
             href="#learn-more"
-            className="px-8 py-4 bg-white text-gray-800 text-lg font-semibold rounded-full shadow-md hover:shadow-lg border-2 border-gray-200 hover:border-purple-400 transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
+            className="px-8 py-4 bg-white text-gray-800 text-md font-normal rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
           >
             Learn More
           </a>
@@ -40,7 +47,7 @@ export default function Hero() {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to from-white to-transparent" />
     </section>
   );
 }

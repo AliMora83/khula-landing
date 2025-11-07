@@ -28,9 +28,10 @@ export default function Header() {
   </ul>
         </div>
         <Link
-          href="#waitlist"
-          className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
-        >
+              href="#waitlist"
+              className="px-6 py-2 rounded-lg text-white transition"
+              style={{ backgroundColor: "var(--primary-green)" }}
+            >
           Join Waitlist
         </Link>
       </nav>
