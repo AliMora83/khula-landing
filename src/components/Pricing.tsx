@@ -5,7 +5,7 @@ export default function Pricing() {
     <section className="bg-green-50 py-16">
       <div className="max-w-2xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 flex items-center justify-center gap-2">
-          <FaSmile className="text-green-400 text-2xl" />
+          <FaSmile className="text-2xl" color="var(--primary-green)" />
           Playful, Trusted, and Flexible
         </h2>
         <p className="text-lg md:text-xl text-gray-700 mb-7">
@@ -15,19 +15,19 @@ export default function Pricing() {
 
           {/* Free Option Card */}
           <div className="bg-white p-6 rounded-xl shadow flex flex-col items-center">
-            <FaCheckCircle className="text-green-400 text-3xl mb-2" />
+            <FaCheckCircle className="text-3xl mb-2" color="var(--primary-green)" />
             <span className="text-2xl font-semibold text-gray-900 mb-2">Free</span>
             <ul className="text-gray-700 text-left mb-2 space-y-1">
               <li>Access core learning activities</li>
               <li>Safe, child-friendly experience</li>
               <li>Build confidence & social-emotional skills</li>
             </ul>
-            <span className="font-medium text-green-500">R0 / month</span>
+            <span className="font-medium" style={{ color: "var(--primary-green)" }}>R0 / month</span>
           </div>
 
           {/* Paid Option Card */}
-          <div className="bg-white p-6 rounded-xl shadow flex flex-col items-center border-2 border-yellow-200">
-            <FaStar className="text-yellow-400 text-3xl mb-2" />
+          <div className="bg-white p-6 rounded-xl shadow flex flex-col items-center border-2" style={{ borderColor: "var(--accent-purple)" }}>
+            <FaStar className="text-3xl mb-2" color="var(--accent-purple)" />
             <span className="text-2xl font-semibold text-gray-900 mb-2">Paid</span>
             <ul className="text-gray-700 text-left mb-2 space-y-1">
               <li>Unlock advanced features</li>
@@ -35,7 +35,9 @@ export default function Pricing() {
               <li>Personalized learning paths</li>
               <li>Priority support</li>
             </ul>
-            <span className="font-medium text-yellow-500">R49 / month</span>
+<span className="font-medium" style={{ color: "var(--accent-purple)" }}>
+  R49 / month
+</span>
           </div>
 
         </div>
